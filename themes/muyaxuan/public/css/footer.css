@@ -1,0 +1,20 @@
+/* CSS Document */
+
+/*尾部内容*/
+.footer{ width:100%; height:360px; background:#efeeec; margin-top:50px;}
+.tfoot{ width:1200px; height:255px; margin:0 auto;}
+.cust ul li{width:250px; height:60px; float:left; margin:15px 0; margin-right:50px;}
+.cust ul li img{float:left; margin:0 15px;}
+.cust ul li h1{ width:145px; float:left;font-size:18px; color:#000; font-weight:400; line-height:30px;}
+.cust ul li p{color:#6c6b6b;float:left;}
+.fcata ul li{ width:240px; height:165px; float:left;}
+.fcata ul li dl{float:left;width:140px; margin:20px 50px;}
+.fcata ul li dl dt{ width:240px; height:auto; float:left; }
+.fcata ul li dl dd{ width:240px; height:auto; float:left; }
+.fcata ul li dl dd a{line-height:30px;color:#636260;}
+.fcata ul li dl dt a{color:#000;}
+.bfoot{ width:100%; height:105px; background:#dad9d7;text-align:center;}
+.bfoot p{ width:620px; height:60px; line-height:60px; margin:0 auto;}
+.bfoot p a{ display:block; float:left; height:15px; line-height:15px; margin-top:20px; color:#4d4c4a; border-right:1px solid #4d4c4a; padding:0 10px;}
+.bfoot p a:last-child{ border:0;}
+.bfoot h1{color:#6c6b6b; font-weight:300;}

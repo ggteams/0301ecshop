@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+<head>
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<title>{$page_title}</title>
+<meta charset="utf-8">
+{if is_array($gg_css)}
+
+  {foreach from=$gg_css item=v}
+    <link rel="stylesheet" type="text/css" href="{$gg_path}css/{$v}.css">
+  {/foreach}
+
+{else}
+  <link rel="stylesheet" type="text/css" href="{$gg_path}css/{$gg_css}.css">
+{/if}
+<link rel="stylesheet" type="text/css" href="{$gg_path}css/common.css">
+<link rel="stylesheet" type="text/css" href="{$gg_path}css/header.css">
+<link rel="stylesheet" type="text/css" href="{$gg_path}css/footer.css">
+
+
+
+
+</head>
+<body>
+<!--头部导航栏-->
+  <div class="header">
+   <div class="head">
+    <!-- <ul class="head_1">
+     <li><a href="#"><img src="{$gg_path}images/coll.png"></a><a href="">收藏木雅轩123</a></li>
+     <li><a href="#"><img src="{$gg_path}images/land.png"></a><a href="">江西站</a>
+         <div class="div"></div>
+         <div class="li_div">
+         <p><a href="#">北 京</a><a href="#">北 京</a><a href="#">北 京</a><a href="#">北 京</a><a href="#">北 京</a></p>
+         <p><a href="#">南 京</a><a href="#">南 京</a><a href="#">南 京</a><a href="#">南 京</a><a href="#">南 京</a></p>
+         <p><a href="#">天 津</a><a href="#">天 津</a><a href="#">天 津</a><a href="#">天 津</a><a href="#">天 津</a></p>
+         <p><a href="#">湖 南</a><a href="#">湖 南</a><a href="#">湖 南</a><a href="#">湖 南</a><a href="#">湖 南</a></p>
+         </div>
+     </li>
+    </ul> -->
+    <ul class="head_2">
+     <li><a href="login.html">登录</a> |  <a href="register.html">注册</a></li>
+     <li><a href="member.html">我的账户<img src="{$gg_path}images/top_s.png" class="img1"></a>
+         <div class="div_1"></div>
+         <div class="li_div_1">
+          <p><a href="#">待处理订单</a> <a href="#">我的消息</a></p>
+          <p><a href="#">返修退换货</a> <a href="#">我的问答</a></p>
+          <p><a href="#">新降价商品</a> <a href="#">我的关注</a></p>
+         </div>
+     </li>
+     <li><a href="flow.php"><img src="{$gg_path}images/shop_c.png" class="img2">购物车<span>{insert name='gg_cart_info'}</span><img src="{$gg_path}images/shop_y.png" class="img3"><img src="{$gg_path}images/top_s.png" class="img1"></a>
+         <div class="div_2"></div>
+         <div class="li_div_2">
+           <p>{insert name='cart_info'}</p>
+         </div>
+     </li>
+     <li><a href="#">网站地图</a></li>
+     <li><a href="#">客服服务<img src="{$gg_path}images/top_s.png" class="img1"></a>
+         <div class="div_3"></div>
+         <div class="li_div_3">
+          <p><a href="#">帮助中心</a> <a href="#">售后服务</a></p>
+          <p><a href="#">在线客服</a> <a href="#">意见建议</a></p>
+          <p><a href="#">电话客服</a> <a href="#">客服邮箱</a></p>
+         </div>
+     </li>
+    </ul>
+    <div class="cle"></div>
+   </div>
+  </div>
+
+<!--头部logo搜索栏-->
+<div class="logo">
+ <div class="fllogo"><a href="index.php"><img src="{$gg_path}images/top_logo.png"></a></div>
+<script type="text/javascript">
+    {literal}
+    <!--
+    function checkSearchForm()
+    {
+        if(document.getElementById('keyword').value)
+        {
+            return true;
+        }
+        else
+        {
+            alert("{$lang.no_keywords}");
+            return false;
+        }
+    }
+    -->
+    {/literal}
+</script>
+ <form id="searchForm" name="searchForm" method="get" action="search.php" onSubmit="return checkSearchForm()">
+  <input type="text" id="keyword" name="keywords"  value="{$search_keywords|escape}" />
+  <input type="submit" id="btn" name="imageField" value="搜 索" />
+   {if $searchkeywords}
+  <p>
+  {foreach from=$searchkeywords item=val}
+  <a href="search.php?keywords={$val|escape:url}">{$val}</a>  
+{/foreach}
+  </p>
+    {/if}
+
+ </form>
+
+
+ <div class="frlogo">
+    <a href="product_list.html"><img src="{$gg_path}images/logoright_03.png"></a>
+    <h6><a href="product_details.html">碳钢磨芯胡椒罐</a></h6>
+    <h5><a href="product_details.html">细腻·耐磨·天然</a></h5>
+    <h4><a href="product_details.html">查看详情</a></h4>
+ </div>
+ <div class="cle"></div>
+</div>
+
+<!--头部nav栏-->
+<div class="head_nav">
+ <div class="nav">
+  <div class="nav_1">
+   <a href="product_list.html">全部商品分类 <img src="{$gg_path}images/nav_class.png"> </a>
+   <div class="nav_1_select">
+     <ul>
+        <!--{foreach from=$gg_categories item=cat}-->
+       <li><a href="{$cat.url}">{$cat.name|escape:html}</a></li><br />
+            <!--{foreach from=$cat.cat_id item=child name=gg_child}-->
+           <li><a href="{$child.url}">{$child.name|escape:html}</a>{if !$smarty.foreach.gg_child.last} / {/if}</li>
+            <!--{/foreach}--> 
+            <br />
+            <br />
+       <!--{/foreach}--> 
+       <!-- <li><a href="product_details.html">盐罐</a> / <a href="product_details.html">胡椒罐</a></li>
+
+       <li><a href="product_details.html">量米勺实木米杯</a></li>  
+       <li><a href="product_details.html">米杯</a> / <a href="product_details.html">水杯</a>/<a href="product_details.html">儿童杯</a></li>
+       <li><a href="product_details.html">亚克力创意调料罐套装</a></li>
+       <li><a href="product_details.html">套装一</a> / <a href="product_details.html">套装二</a> / <a href="product_details.html">钟表</a></li>
+       <li><a href="product_details.html">天然健康的菜板</a> / <a href="product_details.html">防滑菜板</a></li>
+       <li><a href="product_details.html">实木菜板</a> / <a href="product_details.html">面板</a></li>
+       <li><a href="product_details.html">砧板</a> / <a href="product_details.html">面擀</a> / <a href="product_details.html">天然面板</a>></li>
+       <li><a href="product_details.html">实木锅铲不粘锅</a></li>
+       <li><a href="product_details.html">筷子</a> / <a href="product_details.html">汤勺</a> / <a href="product_details.html">饭勺</a></li> -->
+     </ul>
+   </div>
+  </div>
+  
+  <ul class="nav_2">
+  <li><a href="../index.php"{if $navigator_list.config.index eq 1} class="on"{/if}>商城首页<span></span></a></li>
+  <!-- {foreach name=nav_middle_list from=$navigator_list.middle item=nav} -->
+  <li><a href="{$nav.url}" {if $nav.opennew eq 1}target="_blank" {/if} {if $nav.active eq 1} class="cur"{/if}>{$nav.name}<span></span></a></li>
+ <!-- {/foreach} -->
+
+  <!-- <li><a href="index.html" class="on">商城首页</a></li>
+  <li><a href="member.html">会员中心</a></li>
+  <li><a href="product_list.html">新品上架</a></li>
+  <li><a href="product_list.html">热销排行</a></li>
+  <li><a href="#">招商加盟</a></li>
+  <li><a href="#">反馈信息</a></li> -->
+  </ul>
+  <div class="cle"></div>
+ </div>
+</div>

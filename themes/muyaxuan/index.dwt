@@ -1,0 +1,484 @@
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+
+<!--banner部分-->
+<div class="banner">
+ <div class="ban">
+  <ul class="ban_ul">
+   <li></li>
+   <li></li>
+   <li></li>
+  </ul>
+ </div>
+ <a href="product_list.html"><img src="{$gg_path}images/banner1.png"></a>
+ <a href="product_list.html"><img src="{$gg_path}images/banner.png"></a>
+ <a href="product_list.html"><img src="{$gg_path}images/banner2.png"></a>
+</div>
+
+<!--中间内容部分-->
+<div class="content">
+ <div class="cont_1">特价专区 | 每日有惊喜</div>
+ <div class="cont_left">
+  <div class="img"><a href="product_list.html"><img src="{$gg_path}images/red.png"></a>
+                   <a href="product_list.html"><img src="{$gg_path}images/black.png"></a>
+  </div>
+  <div class="cont_right">
+   <ul>
+    <li><h2><a href="product_details.html"><span>木雅轩</span>轩米斗</a></h2>
+        <p><a href="product_details.html">量米勺实木米杯 250g</a></p>
+        <p><a href="product_details.html"><span>￥29</span></a></p>
+        <a href="product_details.html"><img src="{$gg_path}images/pen.png"></a></li>
+    <li><h2><a href="product_details.html"><span>木雅轩</span>轩米斗</a></h2>
+        <p><a href="product_details.html">量米勺实木米杯 250g</a></p>
+        <p><a href="product_details.html"><span>￥29</span></a></p>
+        <a href="product_details.html"><img src="{$gg_path}images/huazhuangpin.png"></a></li>
+    <li><h2><a href="product_details.html"><span>木雅轩</span>轩米斗</a></h2>
+        <p><a href="product_details.html">量米勺实木米杯 250g</a></p>
+        <p><a href="product_details.html"><span>￥29</span></a></p>
+        <a href="product_details.html"><img src="{$gg_path}images/pen.png"></a></li>
+    <li><h2><a href="product_details.html"><span>木雅轩</span>轩米斗</a></h2>
+        <p><a href="product_details.html">量米勺实木米杯 250g</a></p>
+        <p><a href="product_details.html"><span>￥29</span></a></p>
+        <a href="product_details.html"><img src="{$gg_path}images/huazhuangpin.png"></a></li>
+    <li><h3><a href="product_details.html"><span>木雅轩</span>轩米斗</a></h3>
+        <h6><a href="product_details.html">量米勺实木米杯 250g</a></h6>
+        <p><a href="product_details.html"><span>￥29</span></a></p>
+        <a href="product_details.html"><img src="{$gg_path}images/huazhuangpin.png"></a></li>
+    <li><h3><a href="product_details.html"><span>木雅轩</span>轩米斗</a></h3>
+        <h6><a href="product_details.html">量米勺实木米杯 250g</a></h6>
+        <p><a href="product_details.html"><span>￥29</span></a></p>
+        <a href="product_details.html"><img src="{$gg_path}images/pen.png"></a></li>
+    <li><h3><a href="product_details.html"><span>木雅轩</span>轩米斗</a></h3>
+        <h6><a href="product_details.html">量米勺实木米杯 250g</a></h6>
+        <p><a href="product_details.html"><span>￥29</span></a></p>
+        <a href="product_details.html"><img src="{$gg_path}images/huazhuangpin.png"></a></li>
+    <li><h3><a href="product_details.html"><span>木雅轩</span>轩米斗</a></h3>
+        <h6><a href="product_details.html">量米勺实木米杯 250g</a></h6>
+        <p><a href="product_details.html"><span>￥29</span></a></p>
+        <a href="product_details.html"><img src="{$gg_path}images/pen.png"></a></li>
+   </ul>
+  </div>
+  <div class="cle"></div>
+ </div>
+</div>
+
+<!--xbanner部分-->
+<div class="center_ban">
+ <div class="cent_ban">
+  <a href="product_list.html"><img src="{$gg_path}images/xbanner.png"></a>
+ </div>
+</div>
+
+<div class="content2">
+<!--内容导航栏-->
+<div class="xcont">
+ <ul class="cnav" id="gg_tab">
+  <li class="cnav_curt"><a href="javascipt:;">新品上架</a></li>
+  <li><a href="javascipt:;">热门商品</a></li>
+  <li><a href="javascipt:;">推荐商品</a></li>
+  <li><a href="javascipt:;">爆款商品</a></li>
+ </ul>
+<ul class="cnav_li show">
+  <!--{foreach from=$new_goods item=goods}-->
+    <li><a href="{$goods.url}"><img width="165" height="" src="{$goods.thumb}"></a>
+      <p><a href="{$goods.url}">{$goods.short_style_name}</a></p>
+      <h1>最低价:<span>
+      <!-- {if $goods.promote_price neq ""} -->
+          <!-- {$goods.promote_price}促销价 -->
+          <!-- {else}-->
+          {$goods.shop_price}
+          <!--{/if}--></span> &nbsp; <span>市场价:{$goods.market_price}</span></h1>
+          
+      <div class="shadow">
+        <h2><a href="{$goods.url}">立刻购买</a></h2>
+      </div>
+  </li>
+
+  <!--{/foreach}-->
+   
+</ul>
+<ul class="cnav_li">
+  <!--{foreach from=$hot_goods item=goods}-->
+    <li><a href="{$goods.url}"><img width="165" height="" src="{$goods.thumb}"></a>
+      <p><a href="{$goods.url}">{$goods.short_style_name}</a></p>
+      <h1>最低价:<span><!-- {if $goods.promote_price neq ""} -->
+          {$goods.promote_price}
+          <!-- {else}-->
+          {$goods.shop_price}
+          <!--{/if}--></span> &nbsp; <span>市场价:{$goods.market_price}</span></h1>
+          
+      <div class="shadow">
+        <h2><a href="{$goods.url}">立刻购买</a></h2>
+      </div>
+  </li>
+
+  <!--{/foreach}-->
+   
+</ul>
+<ul class="cnav_li">
+  <!--{foreach from=$best_goods item=goods}-->
+    <li><a href="{$goods.url}"><img width="165" height="" src="{$goods.thumb}"></a>
+      <p><a href="{$goods.url}">{$goods.short_style_name}</a></p>
+      <h1>最低价:<span><!-- {if $goods.promote_price neq ""} -->
+          {$goods.promote_price}
+          <!-- {else}-->
+          {$goods.shop_price}
+          <!--{/if}--></span> &nbsp; <span>市场价:{$goods.market_price}</span></h1>
+          
+      <div class="shadow">
+        <h2><a href="{$goods.url}">立刻购买</a></h2>
+      </div>
+  </li>
+
+  <!--{/foreach}-->
+   
+</ul>
+<ul class="cnav_li">
+  <!--{foreach from=$new_goods item=goods}-->
+    <li><a href="{$goods.url}"><img width="165" height="" src="{$goods.thumb}"></a>
+      <p><a href="{$goods.url}">{$goods.short_style_name}</a></p>
+      <h1>最低价:<span><!-- {if $goods.promote_price neq ""} -->
+          {$goods.promote_price}
+          <!-- {else}-->
+          {$goods.shop_price}
+          <!--{/if}--></span> &nbsp; <span>市场价:{$goods.market_price}</span></h1>
+          
+      <div class="shadow">
+        <h2><a href="{$goods.url}">立刻购买</a></h2>
+      </div>
+  </li>
+
+  <!--{/foreach}-->
+   
+</ul>
+</div>
+
+<!--实木砧板系列-->
+<div class="wood">
+ <div class="wood_img"><a href="product_details.html">实木砧板系列</a></div>
+ <div class="wood_cont">
+ <div class="wood_banner">
+  <div class="wood_ban">
+   <ul class="move">
+    <li><h1><a href="product_details.html">天然健康的菜板</a></h1>
+        <h1><a href="product_details.html">砧板实木惊喜狂欢价</a></h1>
+        <p><a href="product_details.html">了解详情 > </a></p>
+        <a href="product_details.html"><img src="{$gg_path}images/xba1.png"></a>
+    </li>
+    <li><h1><a href="product_details.html">防滑健康的菜板</a></h1>
+        <h1><a href="product_details.html">砧板实木惊喜狂欢价</a></h1>
+        <p><a href="product_details.html">了解详情 > </a></p>
+        <a href="product_details.html"><img src="{$gg_path}images/xba2.png"></a>
+    </li>
+    <li><h1><a href="product_details.html">防滑健康的模板</a></h1>
+        <h1><a href="product_details.html">砧板实木惊喜狂欢价</a></h1>
+        <p><a href="product_details.html">了解详情 > </a></p>
+        <a href="product_details.html"><img src="{$gg_path}images/xba.png"></a>
+    </li>
+   </ul>
+   <ul class="ul_2">
+    <li></li>
+    <li></li>
+    <li></li>
+   </ul>
+   </div>
+   
+   <ul class="ul_3">
+    <li><p><img src="{$gg_path}images/xiao1.png"><a href="product_list.html">热门推荐</a></p>
+        <ul>
+          <li><a href="product_details.html">进口橡胶木菜板</a></li> 
+          <li><a href="product_details.html">天然抗菌菜板</a></li> 
+        </ul>
+    </li>
+    <li><p><img src="{$gg_path}images/xiao1.png"><a href="product_details.html">新品上市</a></p>
+        <ul>
+          <li><a href="product_details.html">防裂防滑菜板</a></li>  
+          <li><a href="product_details.html">防滑硅胶菜板</a></li>
+          <li><a href="product_details.html">防滑硅胶菜板</a></li>
+        </ul>
+    </li>
+   </ul>
+  </div>
+  
+  <div class="wood_right">
+    <ul class="wood_list">
+     <li><p><a href="product_details.html">木雅轩砧板进口橡胶木实木切菜板 圆形</a></p>
+         <span>￥299</span>
+         <a href="product_details.html"><img src="{$gg_path}images/zhuozi.png"></a>
+     </li>
+     <li><p><a href="product_details.html">木砧板实木防裂防滑切菜板 绿</a></p>
+         <span>￥109</span>
+         <a href="product_details.html"><img src="{$gg_path}images/caiban.png"></a>
+     </li>
+     <li><p><a href="product_details.html">实木菜板砧板和面擀面板</a></p>
+         <span>￥109</span>
+         <a href="product_details.html"><img src="{$gg_path}images/caipan2.png"></a>
+     </li>
+     <li><p><a href="product_details.html">木砧板实木防裂防滑切菜板 绿</a></p>
+         <span>￥109</span>
+         <a href="product_details.html"><img src="{$gg_path}images/ban2.png"></a>
+     </li>
+     <li><p><a href="product_details.html">实木菜板砧板和面擀面板</a></p>
+         <span>￥109</span>
+         <a href="product_details.html"><img src="{$gg_path}images/cai1.png"></a>
+     </li>
+     <li><p><a href="product_details.html">木砧板实木防裂防滑切菜板 绿</a></p>
+         <span>￥109</span>
+         <a href="product_details.html"><img src="{$gg_path}images/ban2.png"></a>
+     </li>
+     <li><p><a href="product_details.html">实木菜板砧板和面擀面板</a></p>
+         <span>￥109</span>
+         <a href="product_details.html"><img src="{$gg_path}images/cai1.png"></a>
+     </li>
+    </ul>
+  </div>
+  <div class="cle"></div>
+ </div>
+</div>
+
+<!--创意厨房配件-->
+<div class="woods">
+ <div class="woods_img"><a href="product_details.html">创意厨房配件</a></div>
+ <div class="woods_cont">
+ <div class="woods_bann">
+  <div class="woods_ban">
+   <ul class="move">
+    <li><h1><a href="product_details.html">一个性胡椒研磨器</a></h1>
+        <h1><a href="product_details.html">好滋味 &nbsp; 磨出来 &nbsp; &nbsp; &nbsp;</a></h1>
+        <p><a href="product_details.html">了解详情 > </a></p>
+        <a href="product_details.html"><img src="{$gg_path}images/xba.png"></a>
+    </li>
+    <li><h1><a href="product_details.html">二个性胡椒研磨器</a></h1>
+        <h1><a href="product_details.html">好滋味 &nbsp; 磨出来 &nbsp; &nbsp; &nbsp;</a></h1>
+        <p><a href="product_details.html">了解详情 > </a></p>
+        <a href="product_details.html"><img src="{$gg_path}images/xba1.png"></a>
+    </li>
+    <li><h1><a href="product_details.html">三个性胡椒研磨器</a></h1>
+        <h1><a href="product_details.html">好滋味 &nbsp; 磨出来 &nbsp; &nbsp; &nbsp;</a></h1>
+        <p><a href="product_details.html">了解详情 > </a></p>
+        <a href="product_details.html"><img src="{$gg_path}images/xba2.png"></a>
+    </li>
+   </ul>
+   <ul class="cy_2">
+    <li></li>
+    <li></li>
+    <li></li>
+   </ul>
+   </div>
+   <ul class="ul_3">
+    <li><p><img src="{$gg_path}images/xiao1.png"><a href="product_list.html">热门推荐</a></p>
+        <ul>
+           <li><a href="product_details.html">和面擀面板</a></li>  
+           <li><a href="product_details.html">实木擀面杖</a></li>    
+        </ul>
+    </li>
+    <li><p><img src="{$gg_path}images/xiao1.png"><a href="product_list.html">新品上市</a></p>
+        <ul>
+          <li><a href="product_details.html">量米杯</a></li>
+          <li><a href="product_details.html">实木锅铲不粘锅</a></li>
+        </ul>
+    </li>
+   </ul>
+  </div>
+  <div class="woods_right">
+    <ul class="woods_list">
+     <li><p><a href="product_details.html">实木保鲜盒 日式糕点保鲜盘 大号圆形</a></p>
+         <h6><span>￥159</span></h6>
+         <a href="product_details.html"><img src="{$gg_path}images/kai.png" class="woods1"></a>
+     </li>
+     <li><p><a href="product_details.html">实木锅铲不粘锅专用煎锅煎蛋炒菜</a></p>
+         <span>￥29</span>
+         <a href="product_details.html"><img src="{$gg_path}images/chanzi.png"></a>
+     </li>
+     <li><p><a href="product_details.html">实木调料研磨器胡椒花椒研磨</a></p>
+         <span>￥53</span>
+         <a href="product_details.html"><img src="{$gg_path}images/a1.png"></a>
+     </li>
+     <li><p><a href="product_details.html">木雅轩 筷子檀木实木</a></p>
+         <span>￥75</span>
+         <a href="product_details.html"><img src="{$gg_path}images/a2.png"></a>
+     </li>
+     <li><p><a href="product_details.html">实木擀面杖烘焙用具揉面棍</a></p>
+         <span>￥39.9</span>
+         <a href="product_details.html"><img src="{$gg_path}images/a3.png"></a>
+     </li>
+     <li><p><a href="product_details.html">量米勺实木米杯</a></p>
+         <span>￥29</span>
+         <a href="product_details.html"><img src="{$gg_path}images/a4.png"></a>
+     </li>
+     <li><p><a href="product_details.html">亚克力创意调料罐套装</a></p>
+         <span>￥93</span>
+         <a href="product_details.html"><img src="{$gg_path}images/a5.png"></a>
+     </li>
+    </ul>
+  </div>
+  <div class="cle"></div>
+ </div>
+</div>
+
+<!--实木调料罐系列-->
+<div class="wood">
+ <div class="wood_img"><a href="product_details.html">实木调料罐系列</a></div>
+ <div class="wood_cont">
+ <div class="wood_banner">
+  <div class="wood_ban1">
+   <ul class="move">
+    <li><h1><a href="product_details.html">一浪漫之约时尚经典</a></h1>
+        <h1><a href="product_details.html">防潮防虫抗菌</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </h1>
+        <p><a href="product_details.html">了解详情 > </a></p>
+        <a href="product_details.html"><img src="{$gg_path}images/tiao.png"></a>
+    </li>
+    <li><h1><a href="product_details.html">二浪漫之约时尚经典</a></h1>
+        <h1><a href="product_details.html">防潮防虫抗菌</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </h1>
+        <p><a href="product_details.html">了解详情 > </a></p>
+        <a href="product_details.html"><img src="{$gg_path}images/xba2.png"></a>
+    </li>
+    <li><h1><a href="product_details.html">三浪漫之约时尚经典</a></h1>
+        <h1><a href="product_details.html">防潮防虫抗菌</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </h1>
+        <p><a href="product_details.html">了解详情 > </a></p>
+        <a href="product_details.html"><img src="{$gg_path}images/xba.png"></a>
+    </li>
+   </ul>
+   <ul class="tl_2">
+    <li></li>
+    <li></li>
+    <li></li>
+   </ul>
+   </div>
+   <ul class="ul_3">
+    <li><p><img src="{$gg_path}images/xiao1.png"><a href="product_list.html">热门推荐</a></p>
+        <ul>
+           <li><a href="product_details.html">进口橡胶木菜板</a></li>  
+           <li><a href="product_details.html">天然抗菌菜板</a></li>   
+        </ul>
+    </li>
+    <li><p><img src="{$gg_path}images/xiao1.png"><a href="product_list.html">新品上市</a></p>
+        <ul>
+          <li><a href="product_details.html">防裂防滑菜板</a></li> 
+          <li><a href="product_details.html">防滑硅胶菜板</a></li>   
+          <li><a href="product_details.html">防滑硅胶菜板</a></li>
+        </ul>
+    </li>
+   </ul>
+  </div>
+  <div class="wood_right">
+    <ul class="wood_list">
+     <li><p><a href="product_details.html">木雅轩亚克力厨房调味盒套装</a></p>
+         <span>￥155</span>
+         <a href="product_details.html"><img src="{$gg_path}images/b1.png" class="wood1"></a>
+     </li>
+    
+     <li><p><a href="product_details.html">木雅轩亚克力油壶调料盒</a></p>
+         <span>￥179</span>
+         <a href="product_details.html"><img src="{$gg_path}images/b2.png"></a>
+     </li>
+     <li><p><a href="product_details.html">木雅轩油壶两件套调味罐</a></p>
+         <span>￥99</span>
+         <a href="product_details.html"><img src="{$gg_path}images/b3.png"></a>
+     </li>
+     <li><p><a href="product_details.html">木砧板实木防裂防滑切菜板 绿</a></p>
+         <span>￥259</span>
+         <a href="product_details.html"><img src="{$gg_path}images/b4.png"></a>
+     </li>
+     <li><p><a href="product_details.html">木雅轩调料盒调味罐</a></p>
+         <span>￥95</span>
+         <a href="product_details.html"><img src="{$gg_path}images/b5.png"></a>
+     </li>
+     <li><p><a href="product_details.html">木雅轩油壶两件套调味罐</a></p>
+         <span>￥99</span>
+         <a href="product_details.html"><img src="{$gg_path}images/b6.png"></a>
+     </li>
+     <li><p><a href="product_details.html">木雅轩实木密封罐调料盒套装</a></p>
+         <span>￥259</span>
+         <a href="product_details.html"><img src="{$gg_path}images/b4.png"></a>
+     </li>
+    </ul>
+  </div>
+  <div class="cle"></div>
+ </div>
+</div>
+
+<!--实木米桶系列-->
+<div class="woods">
+ <div class="woods_img"><a href="product_details.html">实木米桶系列</a></div>
+ <div class="woods_cont">
+ <div class="woods_bann">
+  <div class="mtban">
+   <ul class="move">
+     <li><h1><a href="product_details.html">一大米找个新家</a></h1>
+         <h1><a href="product_details.html">时尚精品健康之行 &nbsp; &nbsp; &nbsp;</a></h1>
+         <p><a href="product_details.html">了解详情 ></a></p>
+         <a href="product_details.html"><img src="{$gg_path}images/xba2.png"></a>
+     </li>
+     <li><h1><a href="product_details.html">二大米找个新家</a></h1>
+         <h1><a href="product_details.html">时尚精品健康之行 &nbsp; &nbsp; &nbsp;</a></h1>
+         <p><a href="product_details.html">了解详情 ></a></p>
+         <a href="product_details.html"><img src="{$gg_path}images/tiao.png"></a>
+     </li>
+     <li><h1><a href="product_details.html">三大米找个新家</a></h1>
+         <h1><a href="product_details.html">时尚精品健康之行 &nbsp; &nbsp; &nbsp;</a></h1>
+         <p><a href="product_details.html">了解详情 ></a></p>
+         <a href="product_details.html"><img src="{$gg_path}images/xba.png"></a>
+     </li>
+    </ul>
+   <ul class="mt_2">
+    <li></li>
+    <li></li>
+    <li></li>
+   </ul>
+   </div>
+   <ul class="ul_3">
+    <li><p><img src="{$gg_path}images/xiao1.png"><a href="product_list.html">热门推荐</a></p>
+        <ul>
+          <li><a href="product_details.html">和面擀面板</a></li> 
+          <li><a href="product_details.html">实木擀面杖</a></li>    
+        </ul>
+    </li>
+    <li><p><img src="{$gg_path}images/xiao1.png"><a href="product_list.html">新品上市</a></p>
+        <ul>
+           <li><a href="product_details.html">量米杯</a></li>
+           <li><a href="product_details.html">实木锅铲不粘锅</a></li>
+        </ul>
+    </li>
+   </ul>
+  </div>
+   <div class="woods_right">
+    <ul class="woods_list">
+     <li><p><a href="product_details.html">木雅轩米桶套装</a></p>
+         <h6><span>￥199</span></h6>
+         <a href="product_details.html"><img src="{$gg_path}images/c1.png" class="woods2"></a>
+     </li>
+     <li><p><a href="product_details.html">木雅轩米桶10公斤实木储米箱</a></p>
+         <span>￥289</span>
+         <a href="product_details.html"><img src="{$gg_path}images/c2.png"></a></li>
+     <li><p><a href="product_details.html">木雅轩方形实木米缸储米箱</a></p>
+         <span>￥559</span>
+         <a href="product_details.html"><img src="{$gg_path}images/c3.png"></a></li>
+     <li><p><a href="product_details.html">木雅轩 筷子檀木实木</a></p>
+         <span>￥75</span>
+         <a href="product_details.html"><img src="{$gg_path}images/c4.png"></a></li>
+     <li><p><a href="product_details.html">实木擀面杖烘焙用具揉面棍</a></p>
+         <span>￥39.9</span>
+         <a href="product_details.html"><img src="{$gg_path}images/c5.png"></a></li>
+     <li><p><a href="product_details.html">量米勺实木米杯</a></p>
+         <span>￥29</span>
+         <a href="product_details.html"><img src="{$gg_path}images/a4.png"></a></li>
+     <li><p><a href="product_details.html">木雅轩圆型健康防潮储米箱</a></p>
+         <span>￥369</span>
+         <a href=""><img src="{$gg_path}images/c7.png"></a></li>
+    </ul>
+  </div>
+  <div class="cle"></div>
+ </div>
+</div>
+
+  <div class="thep">
+   <p>BACK TO
+   <span>TOP</span></p>
+   <img src="{$gg_path}images/theto.png"/>
+  </div>
+
+</div>
+
+
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+<script src="{$gg_path}js/index.js"></script>

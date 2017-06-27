@@ -1,0 +1,39 @@
+/* CSS Document */
+.content{ width:1200px; height:auto; margin:0 auto;}
+.cont_nav{ width:100%; height:54px; margin:30px 0; position:relative;}
+.cont_nav ul{ position:absolute; top:0; left:0;}
+.cont_nav ul li{ width:268px; height:52px; margin:0 15px; font-family:"微软雅黑"; font-size:18px; color:#fff; line-height:52px; text-align:center;}
+.cont_nav ul li:nth-child(1){ color:#a7a7a5 !important;}
+
+.cont_nav_1{ width:100%; height:50px; background:#f0f0f0; margin-bottom:20px; line-height:50px;}
+.cont_nav_1 ul li{ margin:0 170px 0 10px; font-family:"微软雅黑"; font-size:14px; color:#afafaf; position:relative; cursor:pointer;}
+.checkbox2{ width:12px; height:12px; border:1px solid #c6c6c6; float:left; margin-top:18px; margin-right:5px;}
+.checkbox1{ width:60px; height:12px; position:absolute; top:18px; left:0;}
+
+.cont_list{ width:1180px; height:auto; margin:40px 0;}
+.cont_list li{ margin:0 0 65px 0;}
+.checkbox{ width:12px; height:12px; border:1px solid #c6c6c6; float:left; margin:10px 10px 0 10px; cursor:pointer;}
+.aa{ background:url(../images/fugou.png) no-repeat;}
+.cont_list img{ border:1px solid #c6c6c6; float:left;}
+.list_r{ width:1000px; height:100%; float:right; margin-left:30px;}
+.list_r p{  width:240px; float:left; font-family:"微软雅黑"; font-size:14px; color:#979797; margin-top:10px;}
+.list_r p a{ color:#979797;}
+
+.li_p3 li{ font-family:"微软雅黑"; font-size:14px; color:#979797;}
+#jia,#jian{ float:left; width:20px; height:25px; border:1px solid #ccc; text-align:center; line-height:25px; font-family:"微软雅黑"; font-size:14px; color:#979797; cursor:pointer;}
+.input{ float:left; width:40px; height:25px; border:1px solid #ccc; border-left:none; border-right:none; text-align:center;}
+.li_p3 li:nth-child(1){width:70px; text-align:center; margin:0 150px 0 50px;}
+.li_p3 li:nth-child(3){ width:120px; text-align:center; margin-left:130px;}
+.li_p5{ float:left; margin-top:-5px; margin-left:70px;  width:80px;}
+.li_p5 li{ margin:5px 0;}
+.li_p5 li a{ font-family:"微软雅黑"; font-size:14px; color:#afafaf;}
+
+.content h3{ font-family:"微软雅黑"; font-size:14px; color:#afafaf; text-align:right; font-weight:400; margin:10px 0;}
+.content h3 span{ color:#f00;}
+.btn{ text-align:right; margin-bottom:50px;}
+.btn input{ width:160px; height:40px; background:#5c2522; border:none; font-family:"微软雅黑"; font-size:18px; color:#fff; cursor:pointer;}
+
+.h2{ text-align:center; margin:20px; font-family:"微软雅黑"; font-size:18px; color:#999999; font-weight:400;}
+.h2 a{ font-family:"微软雅黑"; font-size:18px; color:#999999; font-weight:400; padding:2px 10px; border:1px solid #ccc; margin:0 5px;}
+.h2 a:hover{ background:#5c2522; color:#fff;}
+.curt{ background:#5c2522; color:#FFF !important;}

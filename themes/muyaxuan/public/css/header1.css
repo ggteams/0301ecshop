@@ -1,0 +1,56 @@
+/* CSS Document */
+/*头部导航栏*/
+.header{ width:100%; height:40px; background:#e4dfda;}
+.head{ width:1200px; height:40px; margin:0 auto;}
+.head_1{ float:left;}
+.head_1 li{ height:38px; margin:0 5px; position:relative; border:1px solid #e4dfda; padding:0 5px; line-height:38px;}
+.div{ width:70px; height:4px; position:absolute; top:38px; background:#fff; z-index:10; display:none; left:0px;}
+.li_div{ width:200px; height:150px; border:1px solid #ccc; background:#fff; position:absolute; top:39px; left:-1px; display:none;}
+.li_div a{ margin:0 5px;}
+.head_1 li img{ float:left; margin-top:10px;}
+.head_1 li a{ padding-top:55px; font-family:"宋体"; font-size:12px; color:#676767; margin-left:3px; margin-top:20px;}
+.head_2{ float:right;}
+.head_2 li{ height:38px; margin:0 8px; font-family:"宋体"; font-size:12px; color:#676767; position:relative; line-height:40px; border:1px solid #e4dfda; padding:0 5px;}
+.div_1{ width:74px; height:4px; position:absolute; top:38px; background:#fff; z-index:10; display:none; left:0;}
+.div_2{ width:98px; height:4px; position:absolute; top:38px; background:#fff; z-index:10; display:none; left:0;}
+.div_3{ width:74px; height:4px; position:absolute; top:38px; background:#fff; z-index:10; display:none; left:0;}
+.li_div_1{ width:200px; height:150px; border:1px solid #ccc; position:absolute; top:39px; right:-1px; display:none; background:#fff;}
+.li_div_1 p a{ margin:0 20px;}
+.li_div_2{ width:200px; height:150px; border:1px solid #ccc; position:absolute; top:39px; right:-1px; display:none; background:#fff;}
+.li_div_2 p{font-family:"宋体"; font-size:12px; color:#676767; padding:5px 10px; line-height:20px;}
+.li_div_3{ width:200px; height:150px; border:1px solid #ccc; position:absolute; top:39px; right:-1px; display:none; background:#fff;}
+.li_div_3 p a{ margin:0 20px;}
+.img1{ margin-left:5px;}
+.img2{ float:left; margin-right:3px; margin-top:10px;}
+.head_2 li:nth-child(3){ position:relative;}
+.head_2 li span{ margin-left:10px; position:absolute; top:-3px; left:56px; font-family:"宋体"; font-size:12px; color:#fff;}
+.img3{ margin-top:-4px;}
+.head_2 li a{ font-family:"宋体"; font-size:12px; color:#676767;}
+
+
+/*头部logo搜索栏*/
+.logo{ width:1200px; height:150px; border:1px solid #fff; margin:0 auto;}
+.logo .fllogo{ margin-top:40px; margin-left:10px; float:left;}
+.logo form{ margin:60px 280px;}
+#input{ width:493px; height:36px; border:2px solid #f00; padding-left:5px;}
+#btn{ width:103px; height:40px; border:0; background:#f00; margin-left:-5px; cursor:pointer; font-family:"微软雅黑"; font-size:18px; color:#fff; letter-spacing:5px; padding-bottom:4px;}
+.logo form p{ margin-top:5px;}
+.logo form p a{ font-family:"微软雅黑"; font-size:12px; color:#666666; margin-right:15px;}
+.logo .frlogo{ float:right; margin-top:-150px; width:197px; height:87px;}
+.logo .frlogo img{ float:left;}
+.logo .frlogo h6 a{ font-size:16px; font-family:"微软雅黑"; color:#fb362b; font-weight:500;}
+.logo .frlogo h4{ height:25px; background:url(../images/frlogo.png) no-repeat 80px 0px;  margin-top:10px;}
+.logo .frlogo h4 a{ font-size:14px; font-family:"微软雅黑"; color:#ffec36; font-weight:500; margin-left:18px; line-height:23px;}
+
+/*头部nav栏*/
+.head_nav{ width:100%; height:40px; background:#000;}
+.nav{ width:1200px; height:40px; margin:0 auto;}
+.nav_1{ width:250px; height:100%; line-height:40px; position:relative;}
+.nav_1 img{ position:absolute; top:10px; right:40px;}
+.nav_1 a{ font-family:"微软雅黑"; font-size:16px; color:#fff; margin-left:20px;}
+
+.nav_2{ float:right; margin-top:-40px; margin-right:50px;}
+.nav_2 li{ width:80px; height:40px; float:left; margin:0 30px; line-height:40px; text-align:center;}
+.nav_2 li a:hover{ background:#5c2522;}
+.nav_2 li a{ display:block; width:100px; height:40px; font-family:"微软雅黑"; font-size:16px; color:#fff; float:left;}
+.on{ background:#5c2522;}

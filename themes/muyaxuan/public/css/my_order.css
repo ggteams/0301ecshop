@@ -1,0 +1,33 @@
+/* CSS Document */
+.content{ width:1200px; height:auto; margin:0 auto;}
+.cont_nav{ width:100%; height:54px; margin:30px 0; position:relative;}
+.cont_nav ul{ position:absolute; top:0; left:0;}
+.cont_nav ul li{ width:268px; height:52px; margin:0 15px; font-family:"微软雅黑"; font-size:18px; color:#fff; line-height:52px; text-align:center;}
+.cont_nav ul li:nth-child(3){ color:#a7a7a5 !important;}
+
+.cont_nav_1{ width:100%; height:50px; background:#f0f0f0; margin-bottom:20px; line-height:50px;}
+.cont_nav_1 ul li{ margin:0 160px 0 10px; font-family:"微软雅黑"; font-size:14px; color:#afafaf;}
+.cont_nav_1 ul li:nth-child(6){ margin:0 0 0 -40px;}
+.checkbox1{ width:12px; height:12px; border:1px solid #c6c6c6; float:left; margin-top:18px; margin-right:5px; cursor:pointer;}
+
+.list{ width:100%; height:auto; }
+.list li{ margin:40px 0 50px 0;}
+.checkbox{ width:12px; height:12px; border:1px solid #c6c6c6; float:left; margin:10px 10px 0 10px; cursor:pointer;}
+.aa{ background:url(../images/fugou.png) no-repeat;}
+.list li img{ border:1px solid #c6c6c6; float:left; }
+.list_r{ width:1030px; height:100%; float:right; margin-left:30px;}
+.list_r p{ width:240px; float:left;  margin-top:5px;}
+.list_r p a{ font-family:"微软雅黑"; font-size:14px; color:#979797; font-weight:400;}
+.li_3{ float:left; margin-top:10px;}
+.li_3 li{ height:5px; font-family:"微软雅黑"; font-size:14px; color:#979797;}
+#jia,#jian{ float:left; width:20px; height:25px; border:1px solid #ccc; text-align:center; line-height:25px; font-family:"微软雅黑"; font-size:14px; color:#979797; cursor:pointer;}
+.input{ float:left; width:40px; height:25px; border:1px solid #ccc; border-left:none; border-right:none; text-align:center;}
+.li_3 li:nth-of-type(1){width:70px; text-align:center; margin:0 150px 0 35px;}
+.li_3 li:nth-of-type(2){ margin-top:0;}
+.li_3 li:nth-of-type(3){ width:120px; text-align:center; margin-left:150px; margin-top:0px;}
+.li_5{ width:80px; float:right; margin-right:30px;}
+.li_5 li{ text-align:center; line-height:30px;  width:80px; height:30px; margin:5px 0;}
+.li_5 li a span{ font-family:"微软雅黑"; font-size:14px; color:#5c2522;}
+.li_5 li:nth-child(1){ background:#5c2522;}
+.li_5 li a:nth-child(1){ font-family:"微软雅黑"; font-size:14px; color:#fff;}
+.list_r h1{ font-family:"微软雅黑"; font-size:14px; color:#979797; font-weight:400; margin-top:-15px;}

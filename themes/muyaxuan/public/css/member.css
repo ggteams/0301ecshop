@@ -1,0 +1,63 @@
+/* CSS Document */
+/*中间内容*/
+.middle{ width:1200px; height:auto; margin:0 auto; position:relative;}
+/*侧导航*/
+.snav{width:195px; height:auto; border:1px solid #bfbfbf; border-bottom:0; margin-top:30px; float:left;}
+.snav li{width:195px;height:45px; border-bottom:1px solid #bfbfbf; color:#5c2522; font-size:18px; text-align:center; line-height:45px; cursor:pointer;}
+.snav li a{width:195px;height:45px; display:block; color:#555555; font-size:16px;}
+.snav li a:hover{ color:#5c2522;}
+/*内容*/
+.center{width:950px; height:auto; float:right; margin:30px 0;border:1px solid #bfbfbf;}
+.user{ width:930px; height:190px; margin:0 10px; border-bottom:1px solid #bfbfbf; float:left;}
+.lus{ float:left; margin:30px 0; height:130px; width:474px; border-right:1px solid #bfbfbf;}
+.lus img{ float:left;}
+.lus .lutxt{ float:left; margin-left:50px;}
+.lus .lutxt p{ color:#747474; line-height:30px;}
+.fus ul{float:left; height:130px; margin-left:40px;}
+.fus ul li{ float:none; height:27px; line-height:27px;color:#747474; margin:10px 0;}
+.fus ul li a{ color:#747474; margin-right:30px;}
+.fus ul li a:hover{color:#5c2522;}
+.fus ul li a img{ margin-left:10px;}
+.fus ul li img{ vertical-align:middle;}
+.fus ul li:nth-child(2){ margin:20px 0;}
+.fus ul li:nth-child(2) span{ float:left;color:#747474;}
+.fus ul li:nth-child(2) a{ margin:0;}
+.fus ul li i{ display:block; width:90px; height:10px; background:#ff0000; float:left; margin-right:5px; margin-top:9px;}
+.fus ul li i:nth-child(4){ background:#cccccc !important;}
+.fus ul li:nth-child(3) img{ margin:0; margin-right:10px;}
+.fus ul li p{ color:#5c2522; margin-top:20px;}
+.fus ul li p span{ display:inline; background:none; color:#747474; margin-left:30px;}
+.fus ul li p span a{ color:#5c2522; margin:0;}
+/*消费*/
+.consume ul{ float:left;width:930px; height:110px; margin:0 10px;border-bottom:1px solid #bfbfbf;}
+.consume ul li{width:230px; text-align:center;}
+.consume ul li p{color:#747474; margin:30px 0 10px 0;}
+.consume ul li span{ color:#ff0000;}
+/*添加地址*/
+.newsadd{float:left;width:930px; height: auto; margin:0 10px;border-bottom:1px solid #bfbfbf;}
+.newsadd ul li{width:360px; height:160px; float:left; border:1px solid #bfbfbf; margin:50px 50px;}
+#onadd li h1{ font-size:20px; color:#333333; border-bottom:1px solid #bfbfbf; margin:0 20px; line-height:45px; font-weight:400;}
+#onadd li h1 span{font-size:16px; color:#747474; text-align:right;}
+#onadd li p{font-size:16px; color:#747474;margin-left:20px;}
+#adma{ height:40px; width:300px; padding-left:35px;}
+#adma li{ float:left;line-height:40px; border:0; padding:0; list-style-image: url(../images/add_1.png);height:auto; width:auto; background:#fff; margin:0;}
+#adma li:nth-child(2){ margin-left:20px;}
+#adma li a{font-size:16px; color:#747474;}
+#adma li a:hover{ color:#5c2522;}
+.addn{ background: url(../images/addn.png) no-repeat 308px 108px !important;}
+.newsadd ul li:last-child{ text-align:center; background:#f6f6f6; border:0;}
+.newsadd ul li:last-child a{ background:none; padding:0; margin:0;}
+.newsadd ul li:last-child img{ margin:35px 0 5px 0;}
+.newsadd ul li:last-child p{ margin:0;}
+.newsadd ul li:last-child p a{ color:#afafaf;}
+/*猜你喜欢*/
+.lake p{ float:left; color:#5a5a5a; font-size:18px; margin:0 20px; margin-top:60px;}
+.mr_frbox{float:left; width:950px; height:330px; margin-bottom:65px;}
+.mr_frUl{ float:left;height:330px;}
+#mr_fu li{ width:270px; height:330px; text-align:center; float:left;}
+#mr_fu li img{ margin:0; float:none;}
+#mr_fu li p{color:#6e6e6e;}
+#mr_fu li p a{ display:block;color:#6e6e6e;}
+#mr_fu li p a span{ display:block;color:#6e6e6e; font-size:14px;}
+#mr_fu li span{color:#fd3a3a; font-size:18px;}
+.mr_frbox img{float:left;margin-top:125px; cursor:pointer;}

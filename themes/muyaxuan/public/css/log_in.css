@@ -1,0 +1,19 @@
+/* CSS Document */
+.midder{ width:1200px; height:580px; margin:0 auto; padding-top:170px;}
+.chart{ width:490px; height:330px; float:left;}
+.chart input{ margin-left:10px; width:145px; height:45px; border:0; background-color:#e4393c; cursor:pointer; font-family:"微软雅黑"; font-size:18px; color:#fff;}
+.entry{ width:295px; height:295px; float:left; margin-left:250px; border:1px solid #c6c6c6; padding:40px;}
+.entry_a{ width:290px; height:300px; font-family:"微软雅黑"; font-size:14px; color:#c6c6c6;}
+.entry_a p a:nth-child(1){ font-family:"微软雅黑"; font-size:14px; color:#ff5e5e; display:block; float:left;}
+.entry_a p a:nth-child(2){ font-family:"微软雅黑"; font-size:14px; color:#ff5e5e; display:block; float:right;}
+#uesr{ width:279px; height:43px; border:1px solid #c6c6c6; margin-top:20px; color:#c3c3c3; padding:0 5px;}
+#password{ width:279px; height:43px; border:1px solid #c6c6c6; margin-top:20px; color:#c3c3c3; padding:0 5px; margin-bottom:10px;}
+.entry_a form label{ font-family:"微软雅黑"; font-size:14px; color:#c3c3c3; margin:0 5px;}
+.entry_a form .forget_password{ font-family:"微软雅黑"; font-size:14px; color:#c3c3c3 !important; margin-left:10px;}
+#entry{ width:289px; height:43px; margin-top:15px; color:#c3c3c3; background-color:#5c2522; font-family:"微软雅黑"; font-size:18px; border:1px solid #5c2522; cursor:pointer;}
+.entry_a .no_register{ font-family:"微软雅黑"; font-size:14px; color:#c3c3c3; margin-top:24px; margin-bottom:10px;}
+.entry_a a{ font-family:"微软雅黑"; font-size:14px; color:#c3c3c3;}
+
+
+
+
